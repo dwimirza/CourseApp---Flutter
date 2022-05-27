@@ -26,12 +26,9 @@ class CourseItem extends StatelessWidget {
                       topLeft: Radius.circular(20),
                       topRight: Radius.circular(20),
                     ),
-                    child: Hero(
-                      tag: 'tes',
-                      child: Image.asset(
-                        course.imageUrl,
-                        fit: BoxFit.cover,
-                      ),
+                    child: Image.asset(
+                      course.imageUrl,
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
