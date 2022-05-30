@@ -43,9 +43,12 @@ class CourseItem extends StatelessWidget {
                           children: [
                             ClipRRect(
                                 borderRadius: BorderRadius.circular(50),
-                                child: Image.asset(
-                                  course.authorImg,
-                                  width: 20,
+                                child: Hero(
+                                  tag: course.imageUrl,
+                                  child: Image.asset(
+                                    course.authorImg,
+                                    width: 20,
+                                  ),
                                 )),
                             SizedBox(width: 5),
                             Text(

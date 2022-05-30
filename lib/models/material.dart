@@ -36,6 +36,7 @@ var dataMaterial = [
     'Lightroom',
     '30 Min',
   ),
+  Material("1", "Be Confident", "30 Min")
 ];
 class Course {
   String author;

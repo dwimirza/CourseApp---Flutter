@@ -14,11 +14,14 @@ class CustomAppBar extends StatelessWidget {
             children: [
               Container(
                   height: 300,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(20),
-                        bottomRight: Radius.circular(20)),
-                    child: Image.asset(course.imageUrl, fit: BoxFit.cover),
+                  child: Hero(
+                    tag: course.imageUrl,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(20),
+                          bottomRight: Radius.circular(20)),
+                      child: Image.asset(course.imageUrl, fit: BoxFit.cover),
+                    ),
                   )),
             ],
           ),
