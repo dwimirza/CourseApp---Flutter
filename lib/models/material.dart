@@ -19,7 +19,6 @@ var dataMaterial = [
     "1",
     'Before You Start',
     '30 Min',
-
   ),
   Material(
     "2",
@@ -36,25 +35,41 @@ var dataMaterial = [
     'Lightroom',
     '30 Min',
   ),
-  Material("1", "Be Confident", "30 Min")
 ];
+
+var dataMaterialLeadership = [
+  Material("1", "Be Confident", "30 Min"),
+
+  Material("2", "Tes", "30 Min"),
+
+  Material("3", "Tes", "30 Min"),
+  
+  Material("4", "Tes", "30 Min"),
+];
+
 class Course {
   String author;
   String authorImg;
   String title;
   String imageUrl;
 
-  Course({ 
-      required this.author,
+  Course(
+      {required this.author,
       required this.authorImg,
       required this.title,
-      required this.imageUrl
-      });
+      required this.imageUrl});
   static List<Course> generateCourses() {
     return [
-      Course(author: 'John Doe', authorImg: 'assets/profile1.jpg', title: 'Photography Course', imageUrl: 'assets/fotografi.jpg'),
-      Course(author: 'Blake', authorImg: 'assets/nanda.jpeg', title: 'Leadership Course', imageUrl: 'assets/leadership.jpg'),
+      Course(
+          author: 'John Doe',
+          authorImg: 'assets/profile1.jpg',
+          title: 'Photography Course',
+          imageUrl: 'assets/fotografi.jpg'),
+      Course(
+          author: 'Blake',
+          authorImg: 'assets/nanda.jpeg',
+          title: 'Leadership Course',
+          imageUrl: 'assets/leadership.jpg'),
     ];
   }
 }
-
